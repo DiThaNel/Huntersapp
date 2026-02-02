@@ -94,7 +94,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                     </div>
 
                     {/* Content/Info */}
-                    <div className="relative bottom-0 w-full h-[auto] p-4 bg-[url('https://raw.githubusercontent.com/DiThaNel/Wikiapp/master/public/img/CardBg.jpg')] bg-contain text-justify overflow-y-auto border-t-[3px] border-double border-[#979797]">
+                    <div className="relative bottom-0 w-full h-[auto] p-4 bg-[url('https://raw.githubusercontent.com/DiThaNel/Wikiapp/master/wiki/public/img/CardBg.jpg')] bg-contain text-justify overflow-y-auto border-t-[3px] border-double border-[#979797]">
                          <p className="text-[#1f1f1f] text-sm font-medium leading-tight">{info}</p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                          {renderStars(estrellas)}
                     </div>
 
-                    <div className="w-full h-full pt-16 p-4 bg-[url('https://raw.githubusercontent.com/DiThaNel/Wikiapp/master/public/img/NEMbg.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-around">
+                    <div className="w-full h-full pt-16 p-4 bg-[url('https://raw.githubusercontent.com/DiThaNel/Wikiapp/master/wiki/public/img/NEMbg.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-around">
                         
                         {/* Abilities Layout - Attempts to mimic the circular structure of the original "posicion" classes without absolute chaos */}
                         {/* Top */}
