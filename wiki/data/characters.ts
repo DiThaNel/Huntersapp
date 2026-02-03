@@ -1,5 +1,6 @@
 
 export const StarDescriptions: Record<number, string> = {
+  0: '0 Estrellas (Cazador): Son profesionales autorizados, pero sin la distinción de "Single-Star" (una estrella) que se otorga por logros destacados',
   1: '1 Estrella (Cazador Individual): Entregada a los cazadores que han hecho una contribución significativa en algún campo de conocimientos. Si se es un veterano, al recibirla pasan a ser Oficiales Superiores.',
   2: '2 Estrellas (Cazador Doble): Los cazadores con 1 Estrella, que han logrado que sus aprendices reciban 1 Estrella, reciben 2 Estrellas.',
   3: '3 Estrellas (Cazador Triple): Dada a los cazadores, con 2 Estrellas, que han hecho extraordinarias contribuciones a la sociedad en varios campos. Este es el rango más raro y más difícil de obtener, y es considerado un gran honor. El número de cazadores de 3 estrellas del que se tiene conocimiento es de 10.',

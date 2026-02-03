@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Teko } from "next/font/google"; // Optimized Google Font
+import { Teko } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import { SearchProvider } from "./context/SearchContext";
 
 const teko = Teko({
   variable: "--font-teko",
@@ -25,8 +26,10 @@ export default function RootLayout({
         className={`${teko.variable} antialiased`}
         suppressHydrationWarning
       >
-        <Header />
-        {children}
+        <SearchProvider>
+            <Header />
+            {children}
+        </SearchProvider>
       </body>
     </html>
   );

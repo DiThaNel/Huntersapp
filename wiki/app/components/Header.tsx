@@ -1,19 +1,18 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
+import { useSearch } from '../context/SearchContext';
 
-interface HeaderProps {
-    onSearch?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+const Header = () => {
+    const { searchQuery, setSearchQuery } = useSearch();
 
-const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     return (
         <div className="flex-grow">
             <header className="static w-full text-white shadow-md bg-gradient-to-r from-[#333333] to-[#d4d4d4] opacity-90">
-                <div className="px-6 min-h-[64px] flex items-center justify-between">
-                    {/* Title / Logo Area */}
+                <div className="px-6 py-4 min-h-[64px] flex items-center justify-between">
                     <div className="flex-grow flex sm:block">
-                         {/* Placeholder for Logo - assuming path from previous code */}
-                         {/* Using a simple div or text if image is missing, but structure is ready for Image */}
+                         {/* Placeholder for Logo  */}
                             <Image 
                                 src="/img/Logo.png" 
                                 alt="Wiki Hunter Logo" 
@@ -25,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                     </div>
 
                     {/* Search Area */}
-                    <div className="relative rounded bg-white/15 hover:bg-white/25 ml-0 w-full sm:ml-2 sm:w-auto border-[2.5px] border-double border-[#686868] transition-colors">
+                    <div className="relative rounded bg-white/15 hover:bg-white/25 ml-0 w-auto sm:ml-2 sm:w-auto border-[2.5px] border-double border-[#686868] transition-colors">
                         <div className="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none text-[#686868]">
                             <svg 
                                 className="h-5 w-5" 
@@ -43,8 +42,9 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                         <input
                             type="text"
                             placeholder="Buscar..."
-                            onChange={onSearch}
-                            className="block w-full sm:w-[180px] sm:focus:w-[200px] pl-9 pr-3 py-1.5 text-black placeholder-black/70 bg-transparent rounded focus:outline-none transition-all duration-300 font-sans text-base"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="block w-[140px] sm:w-[180px] sm:focus:w-[200px] pl-9 pr-3 py-1.5 text-black placeholder-black/70 bg-transparent rounded focus:outline-none transition-all duration-300 font-sans text-base"
                             aria-label="search"
                         />
                     </div>
