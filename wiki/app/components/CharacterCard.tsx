@@ -113,7 +113,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                         {/* Type (Left) */}
                         <Tooltip content={nem} side="bottom">
                             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm bg-white shrink-0 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg z-30">
-                                <Image src={tipo} alt="Nem Type" width={55} height={55} className="object-cover" />
+                                <Image src={tipo} alt="Nem Type" width={80} height={80} className="object-cover" />
                             </div>
                         </Tooltip>
 
@@ -160,7 +160,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                         {/* Type (Left) */}
                         <Tooltip content={nem} side="bottom">
                             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm bg-white shrink-0 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg z-30">
-                                <Image src={tipo} alt="Nem Type" width={55} height={55} className="object-cover" />
+                                <Image src={tipo} alt="Nem Type" width={80} height={80} className="object-cover" />
                             </div>
                         </Tooltip>
 
@@ -194,7 +194,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad1 && (
                                     <Tooltip content={habilidad1} side="top">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
@@ -205,7 +205,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad2 && (
                                     <Tooltip content={habilidad2} side="left">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
@@ -216,7 +216,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad3 && (
                                     <Tooltip content={habilidad3} side="left">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
@@ -227,7 +227,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad4 && (
                                     <Tooltip content={habilidad4} side="bottom">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
@@ -238,7 +238,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad5 && (
                                     <Tooltip content={habilidad5} side="right">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
@@ -249,7 +249,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
                                 {habilidad6 && (
                                     <Tooltip content={habilidad6} side="right">
                                         <div className="w-[45px] h-[45px] rounded-full border-2 border-white overflow-hidden bg-black/40 transition-all duration-300 hover:scale-105 hover:border-white hover:shadow-lg">
-                                            <Image src={tipo} alt="skill" width={55} height={55} className="object-cover opacity-90" />
+                                            <Image src={tipo} alt="skill" width={80} height={80} className="object-cover opacity-90" />
                                         </div>
                                     </Tooltip>
                                 )}
