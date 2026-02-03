@@ -1,2 +1,2 @@
-## HunterxHunter Cards App (React + Next.js + TypeScript + TailwindCSS))
+## HunterxHunter Cards App (React + Next.js + TypeScript + TailwindCSS)
 
